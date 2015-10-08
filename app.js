@@ -158,9 +158,9 @@ var getInspiration = function(tags2) {
 		type: "GET",
 		})
 	.done(function(result2){
-		console.log(JSON.stringify(result2.items[0].post_count))
+		// console.log(JSON.stringify(result2.items[0].post_count))
 		var searchResults = showSearchResults(request2.tagged, result2.items.length);
-		console.log(result2.items);
+		// console.log(result2.items);
 		$('.search-results').html(searchResults);
 
 		$.each(result2.items, function(i, item) {
